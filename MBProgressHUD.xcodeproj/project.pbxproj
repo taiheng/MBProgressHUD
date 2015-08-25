@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05E55CAE1B8C70F6006B7627 /* MBProgressHUD_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E55CAD1B8C70F6006B7627 /* MBProgressHUD_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05E55CC01B8C7135006B7627 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D286A7521518C70F00E13FB8 /* MBProgressHUD.m */; };
+		05E55CC31B8C715C006B7627 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D286A7511518C70F00E13FB8 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1315DD7617804CBC0032507D /* MBProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D286A7511518C70F00E13FB8 /* MBProgressHUD.h */; };
 		D286A74D1518C70F00E13FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D286A74C1518C70F00E13FB8 /* Foundation.framework */; };
 		D286A7531518C70F00E13FB8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D286A7521518C70F00E13FB8 /* MBProgressHUD.m */; };
@@ -28,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05E55CAB1B8C70F6006B7627 /* MBProgressHUD_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E55CAD1B8C70F6006B7627 /* MBProgressHUD_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD_iOS.h; sourceTree = "<group>"; };
+		05E55CAF1B8C70F6006B7627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1315DD73178045000032507D /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D286A7491518C70F00E13FB8 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D286A74C1518C70F00E13FB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05E55CA71B8C70F6006B7627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D286A7461518C70F00E13FB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05E55CAC1B8C70F6006B7627 /* MBProgressHUD_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05E55CAD1B8C70F6006B7627 /* MBProgressHUD_iOS.h */,
+				05E55CAF1B8C70F6006B7627 /* Info.plist */,
+			);
+			path = MBProgressHUD_iOS;
+			sourceTree = "<group>";
+		};
 		1315DD72178044770032507D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D286A74E1518C70F00E13FB8 /* MBProgressHUD */,
+				05E55CAC1B8C70F6006B7627 /* MBProgressHUD_iOS */,
 				D286A74B1518C70F00E13FB8 /* Frameworks */,
 				D286A74A1518C70F00E13FB8 /* Products */,
 			);
@@ -72,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D286A7491518C70F00E13FB8 /* libMBProgressHUD.a */,
+				05E55CAB1B8C70F6006B7627 /* MBProgressHUD_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +122,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		05E55CA81B8C70F6006B7627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E55CC31B8C715C006B7627 /* MBProgressHUD.h in Headers */,
+				05E55CAE1B8C70F6006B7627 /* MBProgressHUD_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		05E55CAA1B8C70F6006B7627 /* MBProgressHUD_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E55CB21B8C70F6006B7627 /* Build configuration list for PBXNativeTarget "MBProgressHUD_iOS" */;
+			buildPhases = (
+				05E55CA61B8C70F6006B7627 /* Sources */,
+				05E55CA71B8C70F6006B7627 /* Frameworks */,
+				05E55CA81B8C70F6006B7627 /* Headers */,
+				05E55CA91B8C70F6006B7627 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD_iOS;
+			productName = MBProgressHUD_iOS;
+			productReference = 05E55CAB1B8C70F6006B7627 /* MBProgressHUD_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D286A7481518C70F00E13FB8 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D286A7561518C70F00E13FB8 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
@@ -125,6 +179,11 @@
 				CLASSPREFIX = MB;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Matej Bukovinski";
+				TargetAttributes = {
+					05E55CAA1B8C70F6006B7627 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
 			};
 			buildConfigurationList = D286A7431518C70E00E13FB8 /* Build configuration list for PBXProject "MBProgressHUD" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -139,11 +198,30 @@
 			projectRoot = "";
 			targets = (
 				D286A7481518C70F00E13FB8 /* MBProgressHUD */,
+				05E55CAA1B8C70F6006B7627 /* MBProgressHUD_iOS */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		05E55CA91B8C70F6006B7627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		05E55CA61B8C70F6006B7627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E55CC01B8C7135006B7627 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D286A7451518C70F00E13FB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +233,77 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		05E55CB01B8C70F6006B7627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.9.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 0.9.1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = MBProgressHUD_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jdg.MBProgressHUD-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05E55CB11B8C70F6006B7627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.9.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 0.9.1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = MBProgressHUD_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jdg.MBProgressHUD-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D286A7541518C70F00E13FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,6 +392,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05E55CB21B8C70F6006B7627 /* Build configuration list for PBXNativeTarget "MBProgressHUD_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E55CB01B8C70F6006B7627 /* Debug */,
+				05E55CB11B8C70F6006B7627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D286A7431518C70E00E13FB8 /* Build configuration list for PBXProject "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
